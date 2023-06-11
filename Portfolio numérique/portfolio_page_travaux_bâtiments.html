@@ -1,0 +1,241 @@
+<!Doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr" xmlns="http://www.Portfolio_TLD.org/accueil">
+    <style>
+        /*reset CSS*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .img_idtt{
+            text-align: center;
+            padding: 25pt;
+        }
+        #BANDEAU{
+            text-decoration: none;
+            margin: 0 auto;
+            background-color: rgb(171, 171, 171);
+            position: sticky;
+            top: 0px;
+        }
+            /*no puces*/
+        #BANDEAU ul{
+            list-style-type: none;
+        }
+        #BANDEAU ul::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+            /*Disposition*/
+        #BANDEAU li{
+            color: rgb(141, 130, 97);
+            background-color: rgba(215, 215, 215);
+        }
+        .bandeau{
+            color: rgb(141, 130, 97);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+        }
+        .bandeau a{
+            text-decoration: none;
+            color: rgb(141, 130, 97);
+        }
+        .bandeau:hover{
+            border-bottom: 2px solid gold;
+            border-top: 4px solid gold;
+        } 
+        .UNDER{
+            display: none;
+            width: 100%;
+        }
+        .UNDER > .bandeau{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        .DEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL a{
+            text-decoration: none;
+        }
+        .DEROUL:hover > .UNDER{
+            display: block;
+        }
+        .DEROUL >.bandeau::after{
+            content: " ▼";
+            color: black;
+        }
+        .titre{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15pt;
+            text-align: center;
+            padding-top: 20pt;
+        }
+        .txt{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 13pt;
+            text-align: justify;
+            margin: 20pt;
+        }
+        .lgnd{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            font-style: italic;
+            font-variant: small-caps;
+            text-align: center;
+            padding-bottom: 10pt;
+        }
+        .d1{
+            width: 42%;
+            padding-top: 30%;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px #777;
+            background-color: white;
+            background-size: contain;
+            animation: fondu_1 40s ease-in-out infinite both;
+        }
+        .d2{
+            width: 70%;
+            padding-top: 50%;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px #777;
+            background-color: white;
+            background-size: contain;
+            animation: fondu_2 30s ease-in-out infinite both;
+        }
+        .d3{
+            width: 70%;
+            padding-top: 40%;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px #777;
+            background-color: white;
+            background-size: contain;
+            animation: fondu_3 30s ease-in-out infinite both;
+        }
+        .conteneur{
+            max-width:50%;
+            margin: 50px auto;
+        }
+        @keyframes fondu_1{
+            0%{background-image: url(imgs_ptfl/Exupéry/exup_1.png);}
+            20%{background-image: url(imgs_ptfl/Exupéry/exup_2.png);}
+            40%{background-image: url(imgs_ptfl/Exupéry/exup_3.png);}
+            60%{background-image: url(imgs_ptfl/Exupéry/exup_4.png);}
+            80%{background-image: url(imgs_ptfl/Exupéry/exup_5.png);}
+            100%{background-image: url(imgs_ptfl/Exupéry/exup_6.png);}
+        }
+        @keyframes fondu_2{
+            0%{background-image: url(imgs_ptfl/Legay/Lg_1.png);}
+            33.33%{background-image: url(imgs_ptfl/Legay/Lg_2.png);}
+            66.66%{background-image: url(imgs_ptfl/Legay/Lg_3.png);}          
+            100%{background-image: url(imgs_ptfl/Legay/Lg_4.png);}
+        }
+        @keyframes fondu_3{
+            0%{background-image: url(imgs_ptfl/Querina/Qrn_1.png);}
+            25%{background-image: url(imgs_ptfl/Querina/Qrn_2.png);}
+            50%{background-image: url(imgs_ptfl/Querina/Qrn_3.png);}
+            75%{background-image: url(imgs_ptfl/Querina/Qrn_4.png);}
+            100%{background-image: url(imgs_ptfl/Querina/Qrn_5.png);}
+        }
+        .d1:hover, .d2:hover, .d3:hover{
+            animation-play-state: paused;
+        }
+    </style>
+    
+    <head>
+      <title> Portfolio </title>
+      <meta charset="UTF-8">
+      <!--link rel="stylesheet" href="style.css"-->
+  </head>
+
+  <body>
+      <nav id="BANDEAU">
+          <a class="img_idtt" href="portfolio_page_accueil.html"> <p> <img src="imgs_ptfl/photo identité.jpg" width="150" height="150"> </p> </a>
+          
+          <a id="ACCUEIL">
+              <ul>
+                  <li class="DEROUL"> <h1 class="bandeau"><a href="portfolio_page_formation.html">Formation</a></h1>
+                      <ul class="UNDER">
+                          <li class="bandeau"><a href="portfolio_page_IUT_35.html"><h3>IUT de Rennes</h3></a></li>
+                      </ul>
+                  </li>
+
+                  <li class="UNDEROUL"><a href="portfolio_page_compétences.html"><h1 class="bandeau"> Compétences </h1></a> </li>
+               
+                  <li class="DEROUL"><h1 class="bandeau"><a href="portfolio_page_projets.html"> Projets développés </a></h1>
+                      <ul class="UNDER">
+                        <li class="bandeau"><h3><a href="portfolio_page_travaux_bâtiments.html">Solutions bâtiments</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_travaux_publics.html">Solutions TP</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_dimensionnements.html">Dimensionnement</a></h3></li>
+                      </ul>
+                  </li>
+
+                  <li class="DEROUL"><h1 class="bandeau"><a href="portfolio_page_expériences_pros.html">Expériences professionnelles</a></h1>
+                      <ul class="UNDER">
+                        <li class="bandeau"><h3><a href="portfolio_page_ekum.html">Ekum Architectes</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_ceb.html">Charpente et Bardage</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_srb.html">SRB Construction</a></h3></li>
+                      </ul>
+                  </li>
+              </ul>
+          </a>
+      </nav>
+        <a class="img_idtt"><p><img src="imgs_ptfl/prcr_bec_bloc_bat.png" width="930" height="600"></p></a>
+        <p class="lgnd">
+            Niveaux de compétences dans le domaine des travaux bâtiments
+        </p>
+        <hr>
+        <h4 class="titre"> ERP Saint-Exupéry </h4>
+        <div class="conteneur_1">
+            <div class="d1"></div>
+        </div>
+        <p class="txt">
+            Le projet de l'ERP de Saint-Exupéry consiste en la construction d'un bâtiment d'enseignement supérieur, pour le groupe scolaire Antoine de Saint-Exupéry.<br>
+            Le bâtiment réalisé est un R+3 en enveloppe béton regroupant des salles d'enseignement, amphitéatres, bureaux administratifs, une cafétéria et divers locaux techniques.<br>
+            Le rez-de-chausséeprésente une façade en béton matricée. Le premier étage est habillé de murs-rideau et est entouré de jardinières. 
+            Les deux derniers étages, eux, reçoivent une isolation par l'extérieur, sous bardage metallique.<br>
+            Dans le cadre d'une situation d'apprentissage évaluée, mon binôme et moi-même avons réalisés un ensemble de plans de sécurité incendie, 
+            ainsi qu'un synoptique de façade et détail sur les jardinière du R+1<br>
+        </p>
+        <hr>
+
+        <h4 class="titre"> Legay </h4>
+        <div class="conteneur">
+            <div class="d2"></div>
+        </div>
+        <p class="txt">
+            Le projet Legay consiste en un projet fictif de construction d'une maison neuve, à un étage.<br>
+            Cette demeure à la particularité de se constitué de murs à ossatures bois.<br>
+            Dans le cadre de cette situation d'apprentissage évaluée, avec mon binôme, nous avons réalisé des plans de coffrage du plancher haut du rez-de-chaussée,
+            afin de présenté d'une part la solution d'un solivage visible supportant des panneaux OSB, et d'autre part une solution de plancher CLT.<br>
+            Il a donc dallut prédimensionner les éléments de solivage et les panneaux du plancher afin d'en définir un calepinage.<br>
+            Enfin, nous avons réalisés des plans d'exécution pour quelques murs à ossatures bois, ainsi que des coupes de détails explicitants les liaisons et la continuité de l'enveloppe.<br>
+        </p>
+        <hr>
+
+        <h4 class="titre"> Querina </h4>
+        <div class="conteneur">
+            <div class="d3"></div>
+        </div>
+        <p class="txt">
+            Le projet Querina consiste en l'aménagement d'un immeuble d'habitation, pour accueillir un double cabinet de kinésithérapeutes.<br>
+            Ce nouvel aménagement nécessite une reconceptualisation du sous-sol, afin d'acceuillir 5 nouvelles places, dont 1 place PMR.<br>
+            Dans le cadre de cette situation d'apprentissage évaluée, avec mon binôme, nous avons retraivailler l'aménagement des espaces,
+            en prennant en compte la nécessaire accessibilité des personnes à mobilité réduite et leur sécurité.<br>
+            De surcroit, nous avons conceptualisé de nouveau le parking en sous-sol, dans le respect des réglementations et normes en vigueur.<br>
+            Nous avons réaliser aussi le dimensionnement du réseau de poutres en sous-sol, en cohérence avec nos descentes de charges,
+            et d'une semelle isolée et d'une semlle filante.<br>
+            Enfin, nous avons réalisé un plan des réseaux enterrés permettant la récupération des eaux usées du sous-sol,
+            ainsi que la séparation des hydrocarbures.<br>
+        </p>
+        <hr>
+  </body>
+</html>

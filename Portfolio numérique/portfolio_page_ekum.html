@@ -1,0 +1,178 @@
+<!Doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr" xmlns="http://www.Portfolio_TLD.org/accueil">
+    <style>
+        /*reset CSS*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .img_idtt{
+            text-align: center;
+            padding: 25pt;
+        }
+        #BANDEAU{
+            text-decoration: none;
+            margin: 0 auto;
+            background-color: rgb(171, 171, 171);
+            position: sticky;
+            top: 0px;
+        }
+            /*no puces*/
+        #BANDEAU ul{
+            list-style-type: none;
+        }
+        #BANDEAU ul::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+            /*Disposition*/
+        #BANDEAU li{
+            color: rgb(141, 130, 97);
+            background-color: rgba(215, 215, 215);
+        }
+        .bandeau{
+            color: rgb(141, 130, 97);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+        }
+        .bandeau a{
+            text-decoration: none;
+            color: rgb(141, 130, 97);
+        }
+        .bandeau:hover{
+            border-bottom: 2px solid gold;
+            border-top: 4px solid gold;
+        } 
+        .UNDER{
+            display: none;
+            width: 100%;
+        }
+        .UNDER > .bandeau{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        .DEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL a{
+            text-decoration: none;
+        }
+        .DEROUL:hover > .UNDER{
+            display: block;
+        }
+        .DEROUL >.bandeau::after{
+            content: " ▼";
+            color: black;
+        }
+        .titre{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15pt;
+            text-align: center;
+            padding-top: 20pt;
+        }
+        .txt{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 13pt;
+            text-align: justify;
+            margin: 20pt;
+        }
+        .lgnd{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            font-style: italic;
+            font-variant: small-caps;
+            text-align: center;
+            padding-bottom: 10pt;
+        }
+        .d1{
+            width: 42%;
+            padding-top: 30%;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px #777;
+            background-color: white;
+            background-size: contain;
+            animation: fondu_1 50s ease-in-out infinite both;
+        }
+        .conteneur{
+            max-width:50%;
+            margin: 50px auto;
+        }
+        @keyframes fondu_1{
+            0%{background-image: url(imgs_ptfl/Ekum/ekm_2.png);}
+            14.286%{background-image: url(imgs_ptfl/Ekum/ekm_9.jpg);}
+            28.57%{background-image: url(imgs_ptfl/Ekum/ekm_6.jpg);}
+            42.857%{background-image: url(imgs_ptfl/Ekum/ekm_4.png);}
+            57.143%{background-image: url(imgs_ptfl/Ekum/ekm_3.png);}
+            71.428%{background-image: url(imgs_ptfl/Ekum/ekm_5.png);}
+            85.71%{background-image: url(imgs_ptfl/Ekum/ekm_7.jpg);}
+            100%{background-image: url(imgs_ptfl/Ekum/ekm_8.jpg);}
+        }
+        .d1:hover{
+            animation-play-state: paused;
+        }
+    </style>
+    
+    <head>
+      <title> Portfolio </title>
+      <meta charset="UTF-8">
+      <!--link rel="stylesheet" href="style.css"-->
+  </head>
+
+  <body>
+      <nav id="BANDEAU">
+          <a class="img_idtt" href="portfolio_page_accueil.html"> <p> <img src="imgs_ptfl/photo identité.jpg" width="150" height="150"> </p> </a>
+          
+          <a id="ACCUEIL">
+              <ul>
+                  <li class="DEROUL"> <h1 class="bandeau"><a href="portfolio_page_formation.html">Formation</a></h1>
+                      <ul class="UNDER">
+                          <li class="bandeau"><a href="portfolio_page_IUT_35.html"><h3>IUT de Rennes</h3></a></li>
+                      </ul>
+                  </li>
+
+                  <li class="UNDEROUL"><a href="portfolio_page_compétences.html"><h1 class="bandeau"> Compétences </h1></a> </li>
+               
+                  <li class="DEROUL"><h1 class="bandeau"><a href="portfolio_page_projets.html"> Projets développés </a></h1>
+                      <ul class="UNDER">
+                        <li class="bandeau"><h3><a href="portfolio_page_travaux_bâtiments.html">Solutions bâtiments</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_travaux_publics.html">Solutions TP</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_dimensionnements.html">Dimensionnement</a></h3></li>
+                      </ul>
+                  </li>
+
+                  <li class="DEROUL"><h1 class="bandeau" ><a href="portfolio_page_expériences_pros.html">Expériences professionnelles</a></h1>
+                      <ul class="UNDER">
+                        <li class="bandeau"><h3><a href="portfolio_page_ekum.html">Ekum Architectes</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_ceb.html">Charpente et Bardage</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_srb.html">SRB Construction</a></h3></li>
+                      </ul>
+                  </li>
+              </ul>
+          </a>
+      </nav>
+        <a class="img_idtt"> <p> <img src="imgs_ptfl/Ekum/ekm_1.png" width="403" height="150"> </p> </a>
+        <h4 class="titre"> Ekum Architectes <br> Stage technicien dessinateur projeteur assistant architecte </h4>
+        <div class="conteneur_1">
+            <div class="d1"></div>
+        </div>
+        <p class="txt">
+            Lors de ma deuxièmme année d'étude, j'ai réalisé un stage chez EKUM ARCHITECTES.<br>
+            J'y ai intégré le pôle d'études et conception en qualité de technicien dessinateur projeteur assistant d'architecte.<br>
+            Sous la tutelle de Madame Christelle DAVAL, j'ai été chargé de la modélisation sur le logiciel REVIT.<br>
+            J'ai travaillé à la réalisation de Documents d'Ouvrages Exécutés, de plans de Permis de Construire ou d'Aménager,
+            ainsi qu'à la modélisation de bâtiments et terrains existants.<br>
+            J'ai aussi participé à la conception d'extensions et au réamménagement de bâtits existants.<br>
+            En conséquence, ce stage m'a permis de développer mes compétences de modélisation et de confronté, 
+            une fois encore, mes connaissance théoriques et techniques aux éxigences de la pratique.<br>
+        </p>
+  </body>
+</html>

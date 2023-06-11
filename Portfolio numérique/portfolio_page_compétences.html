@@ -1,0 +1,135 @@
+<!Doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr" xmlns="http://www.Portfolio_TLD.org/accueil">
+    <style>
+        /*reset CSS*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .img_idtt{
+            text-align: center;
+            padding: 25pt;
+        }
+        #BANDEAU{
+            text-decoration: none;
+            margin: 0 auto;
+            background-color: rgb(171, 171, 171);
+            position: sticky;
+            top: 0px;
+        }
+            /*no puces*/
+        #BANDEAU ul{
+            list-style-type: none;
+        }
+        #BANDEAU ul::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+            /*Disposition*/
+        #BANDEAU li{
+            color: rgb(141, 130, 97);
+            background-color: rgba(215, 215, 215);
+        }
+        .bandeau{
+            color: rgb(141, 130, 97);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+        }
+        .bandeau a{
+            text-decoration: none;
+            color: rgb(141, 130, 97);
+        }
+        .bandeau:hover{
+            border-bottom: 2px solid gold;
+            border-top: 4px solid gold;
+        } 
+        .UNDER{
+            display: none;
+            width: 100%;
+        }
+        .UNDER > .bandeau{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        .DEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL a{
+            text-decoration: none;
+        }
+        .DEROUL:hover > .UNDER{
+            display: block;
+        }
+        .DEROUL >.bandeau::after{
+            content: " ▼";
+            color: black;
+        }
+        .txt{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20pt;
+            font-variant: small-caps;
+            text-align: center;
+            margin: 20pt;
+            line-height: 30pt;
+        }
+    </style>
+    
+    <head>
+      <title> Portfolio </title>
+      <meta charset="UTF-8">
+      <!--link rel="stylesheet" href="style.css"-->
+  </head>
+
+  <body>
+      <nav id="BANDEAU">
+          <a class="img_idtt" href="portfolio_page_accueil.html"> <p> <img src="imgs_ptfl/photo identité.jpg" width="150" height="150"> </p> </a>
+          
+          <a id="ACCUEIL">
+              <ul>
+                  <li class="DEROUL"> <h1 class="bandeau"><a href="portfolio_page_formation.html">Formation</a></h1>
+                      <ul class="UNDER">
+                          <li class="bandeau"><a href="portfolio_page_IUT_35.html"><h3>IUT de Rennes</h3></a></li>
+                      </ul>
+                  </li>
+
+                  <li class="UNDEROUL"><a href="portfolio_page_compétences.html"><h1 class="bandeau"> Compétences </h1></a> </li>
+                  
+                  <li class="DEROUL"><h1 class="bandeau"><a href="portfolio_page_projets.html"> Projets développés </a></h1>
+                      <ul class="UNDER">
+                        <li class="bandeau"><h3><a href="portfolio_page_travaux_bâtiments.html">Solutions bâtiments</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_travaux_publics.html">Solutions TP</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_dimensionnements.html">Dimensionnement</a></h3></li>
+                      </ul>
+                  </li>
+
+                  <li class="DEROUL"><h1 class="bandeau"><a href="portfolio_page_expériences_pros.html">Expériences professionnelles</a></h1>
+                      <ul class="UNDER">
+                        <li class="bandeau"><h3><a href="portfolio_page_ekum.html">Ekum Architectes</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_ceb.html">Charpente et Bardage</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_srb.html">SRB Construction</a></h3></li>
+                      </ul>
+                  </li>
+              </ul>
+          </a>
+      </nav>
+
+    <p class="txt">
+        Modélisations 3D sur les logiciels REVIT et MENSURA<br>
+        Réalisations de plans 2D sur AutoCAD<br>
+        Utilisation des logiciels ROBOT STRUCTURAL ANALYSIS et Graitec<br>
+        Choix de solutions techniques<br>
+        Préparation et suivi de chantier<br>
+        Codage en languages python et HTML<br>
+    </p>  
+
+    </body>
+</html>

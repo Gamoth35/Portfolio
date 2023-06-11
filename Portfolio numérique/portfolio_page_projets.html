@@ -1,0 +1,258 @@
+<!Doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr" xmlns="http://www.Portfolio_TLD.org/accueil">
+    <style>
+        /*reset CSS*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .img_idtt{
+            text-align: center;
+            padding: 25pt;
+        }
+        #l_1{
+            text-align: center;
+            padding-top: 25pt;
+        }
+        #l_2{
+            text-align: center;
+            padding-top: 25pt;
+        }
+        #l_3{
+            margin-left: 325pt;
+            padding-top: 25pt;
+        }
+        #BANDEAU{
+            text-decoration: none;
+            margin: 0 auto;
+            background-color: rgb(171, 171, 171);
+            position: sticky;
+            top: 0px;
+        }
+            /*no puces*/
+        #BANDEAU ul{
+            list-style-type: none;
+        }
+        #BANDEAU ul::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+            /*Disposition*/
+        #BANDEAU li{
+            color: rgb(141, 130, 97);
+            background-color: rgba(215, 215, 215);
+        }
+        .bandeau{
+            color: rgb(141, 130, 97);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+        }
+        .bandeau a{
+            text-decoration: none;
+            color: rgb(141, 130, 97);
+        }
+        .bandeau:hover{
+            border-bottom: 2px solid gold;
+            border-top: 4px solid gold;
+        }
+        .UNDER{
+            display: none;
+            width: 100%;
+        }
+        .UNDER > .bandeau{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        .DEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL a{
+            text-decoration: none;
+        }
+        .DEROUL:hover > .UNDER{
+            display: block;
+        }
+        .DEROUL >.bandeau::after{
+            content: " ▼";
+            color: black;
+        }
+        .lgnd{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            padding-top: 5pt;
+            font-style: italic;
+            font-variant: small-caps;
+        }
+        .lgnd a{
+            text-decoration: none;
+            color: black;
+        }
+        .domns{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            font-variant: small-caps;
+        }
+        .domns a{
+            text-decoration: none;
+            color: rgb(171, 171, 171);
+        }
+        #txt_img_1{
+            margin-left: 285pt;
+        }
+        #txt_img_1_{
+            box-shadow: 5px 5px gray;
+            background-color: blue;
+            margin-left: 20pt;
+        }
+        #txt_img_2{
+            padding-left: 150pt;
+        }
+        #txt_img_2_{
+            box-shadow: 5px 5px gray;
+            background-color: blue;
+        }
+        #txt_img_3{
+            padding-left: 200pt;
+        }
+        #txt_img_31_{
+            box-shadow: 5px 5px gray;
+            background-color: blue;
+        }
+        #txt_img_32_{
+            box-shadow: 5px 5px gray;
+            background-color: blue;
+        }
+        #txt_img_4{
+            margin-left: 400pt;
+        }
+        #txt_img_4_{
+            box-shadow: 5px 5px gray;
+            background-color: blue;
+            margin-left: 250pt;
+        }
+        #txt_img_42_{
+            box-shadow: 5px 5px gray;
+            background-color: blue;
+        }
+        #txt_img_5{
+            padding-left: 100pt;
+        }
+        #txt_img_5_{
+            box-shadow: 5px 5px gray;
+            background-color: blue;
+        }
+        #txt_img_52_{
+            box-shadow: 5px 5px gray;
+            background-color: blue;
+        }
+        #txt_img_6{
+            margin-left: 400pt;
+        }
+        #txt_img_6_{
+            box-shadow: 5px 5px gray;
+            background-color: blue;
+            margin-left: 235pt;
+        }
+        #txt_img_7{
+            padding-left: 165pt;
+        }
+        #txt_img_7_{
+            box-shadow: 5px 5px gray;
+            background-color: blue;
+        }
+    </style>
+    
+    <head>
+        <title> Portfolio </title>
+        <meta charset="UTF-8">
+        <!--link rel="stylesheet" href="style.css"-->
+    </head>
+
+    <body>
+        <nav id="BANDEAU">
+            <a class="img_idtt" href="portfolio_page_accueil.html"> <p> <img src="imgs_ptfl/photo identité.jpg" width="150" height="150"> </p> </a>
+            
+            <a id="ACCUEIL">
+                <ul>
+                    <li class="DEROUL"> <h1 class="bandeau"><a href="portfolio_page_formation.html">Formation</a></h1>
+                        <ul class="UNDER">
+                            <li class="bandeau"><a href="portfolio_page_IUT_35.html"><h3>IUT de Rennes</h3></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="UNDEROUL"><a href="portfolio_page_compétences.html"><h1 class="bandeau"> Compétences </h1></a> </li>
+               
+                    <li class="DEROUL"><h1 class="bandeau"><a href="portfolio_page_projets.html"> Projets développés </a></h1> 
+                        <ul class="UNDER">
+                            <li class="bandeau"><h3><a href="portfolio_page_travaux_bâtiments.html">Solutions bâtiments</a></h3></li>
+                            <li class="bandeau"><h3><a href="portfolio_page_travaux_publics.html">Solutions TP</a></h3></li>
+                            <li class="bandeau"><h3><a href="portfolio_page_dimensionnements.html">Dimensionnement</a></h3></li>
+                        </ul>
+                    </li>
+
+                    <li class="DEROUL"><h1 class="bandeau"><a href="portfolio_page_expériences_pros.html">Expériences professionnelles</a></h1>
+                        <ul class="UNDER">
+                            <li class="bandeau"><h3><a href="portfolio_page_ekum.html">Ekum Architectes</a></h3></li>
+                            <li class="bandeau"><h3><a href="portfolio_page_ceb.html">Charpente et Bardage</a></h3></li>
+                            <li class="bandeau"><h3><a href="portfolio_page_srb.html">SRB Construction</a></h3></li>
+                        </ul>
+                    </li>
+                </ul>
+            </a>
+        </nav>
+        <p id="l_1">
+            <a><img src="imgs_ptfl/ERP_1.png" width="245px" height="200px"></a>
+            <a><img src="imgs_ptfl/Legay_1.png" width="245px" height="200px" style="padding-left: 20pt;"></a>
+            <a><img src="imgs_ptfl/Querina_1.png" width="345px" height="200px" style="padding-left: 20pt;"></a>
+        </p>
+        <p class="lgnd">
+            <a id="txt_img_1">Saint-Exupéry 
+            <a id="txt_img_2">Legay
+            <a id="txt_img_3">Le Querina
+        </p>
+        <p class="domns">
+            <a href="portfolio_page_travaux_bâtiments.html"><span id="txt_img_1_">Solutions Bâtiments</span>
+            <a href="portfolio_page_dimensionnements.html" style="padding-left: 10pt;"><span id="txt_img_31_">Dimensionnement</span>
+            <a href="portfolio_page_travaux_bâtiments.html" style="padding-left: 40pt;"><span id="txt_img_2_">Solutions Bâtiments</span>
+            <a href="portfolio_page_dimensionnements.html" style="padding-left: 95pt;"><span id="txt_img_31_">Dimensionnement</span>
+            <a href="portfolio_page_travaux_bâtiments.html" style="padding-left: 10pt;"><span id="txt_img_32_">Solutions Bâtiments</span>
+        </p>
+
+        <p id="l_2">
+            <a><img src="imgs_ptfl/Lignol_1.png" width="127px" height="200px"></a>
+            <a><img src="imgs_ptfl/Mensura_1.PNG" width="316px" height="200px" style="padding-left: 20pt;"></a>
+        </p>
+        <p class="lgnd">
+            <a id="txt_img_4">Lotissement Lignol 
+            <a id="txt_img_5">Mensura
+        </p>
+        <p class="domns">
+            <a href="portfolio_page_travaux_publics.html"><span id="txt_img_4_">Solutions TP</span>
+            <a href="portfolio_page_dimensionnements.html" style="padding-left:10pt;"><span id="txt_img_42_">Dimensionnement</span></a>
+            <a href="portfolio_page_travaux_publics.html" style="padding-left: 15pt;"><span id="txt_img_5_">Solutions TP</span>
+            <a href="portfolio_page_dimensionnements.html" style="padding-left:10pt;"><span id="txt_img_52_">Dimensionnement</span></a>
+        </p>
+
+        <p id="l_3">
+            <a><img src="imgs_ptfl/Maison_medic_1.png" width="300px" height="200px"></a>
+            <a><img src="imgs_ptfl/Ballan Mire_1.png" width="261px" height="200px" style="padding-left: 20pt;"></a>
+        </p>
+        <p class="lgnd">
+            <a id="txt_img_6">Maison médicale
+            <a id="txt_img_7">Ballan Mire
+        </p>
+        <p class="domns">
+            <a href="portfolio_page_dimensionnements.html"><span id="txt_img_6_">Dimensionnement</span>
+            <a href="portfolio_page_dimensionnements.html" style="padding-left: 145pt;"><span id="txt_img_7_">Dimensionnement</span>
+        </p>
+    </body>
+</html>

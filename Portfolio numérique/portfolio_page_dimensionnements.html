@@ -1,0 +1,208 @@
+<!Doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr" xmlns="http://www.Portfolio_TLD.org/accueil">
+    <style>
+        /*reset CSS*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .img_idtt{
+            text-align: center;
+            padding: 25pt;
+        }
+        #BANDEAU{
+            text-decoration: none;
+            margin: 0 auto;
+            background-color: rgb(171, 171, 171);
+            position: sticky;
+            top: 0px;
+        }
+            /*no puces*/
+        #BANDEAU ul{
+            list-style-type: none;
+        }
+        #BANDEAU ul::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+            /*Disposition*/
+        #BANDEAU li{
+            color: rgb(141, 130, 97);
+            background-color: rgba(215, 215, 215);
+        }
+        .bandeau{
+            color: rgb(141, 130, 97);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+        }
+        .bandeau a{
+            text-decoration: none;
+            color: rgb(141, 130, 97);
+        }
+        .bandeau:hover{
+            border-bottom: 2px solid gold;
+            border-top: 4px solid gold;
+        } 
+        .UNDER{
+            display: none;
+            width: 100%;
+        }
+        .UNDER > .bandeau{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        .DEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL a{
+            text-decoration: none;
+        }
+        .DEROUL:hover > .UNDER{
+            display: block;
+        }
+        .DEROUL >.bandeau::after{
+            content: " ▼";
+            color: black;
+        }
+        .titre{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15pt;
+            text-align: center;
+            padding-top: 20pt;
+        }
+        .txt{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 13pt;
+            text-align: justify;
+            margin: 20pt;
+        }
+        .lgnd{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            font-style: italic;
+            font-variant: small-caps;
+            text-align: center;
+            padding-bottom: 10pt;
+        }
+        .d1{
+            width: 42%;
+            padding-top: 30%;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px #777;
+            background-color: white;
+            background-size: contain;
+            animation: fondu_1 40s ease-in-out infinite both;
+        }
+        .d2{
+            width: 70%;
+            padding-top: 50%;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px #777;
+            background-color: white;
+            background-size: contain;
+            animation: fondu_2 30s ease-in-out infinite both;
+        }
+        .conteneur{
+            max-width:50%;
+            margin: 50px auto;
+        }
+        @keyframes fondu_1{
+            0%{background-image: url(imgs_ptfl/Maison_medic_1.png);}
+            20%{background-image: url(imgs_ptfl/Maison_médicale/msn_mdc_2.png);}
+            40%{background-image: url(imgs_ptfl/Maison_médicale/msn_mdc_4.png);}
+            60%{background-image: url(imgs_ptfl/Maison_médicale/msn_mdc_5.png);}
+            80%{background-image: url(imgs_ptfl/Maison_médicale/msn_mdc_1.png);}
+            100%{background-image: url(imgs_ptfl/Maison_médicale/msn_mdc_3.png);}
+        }
+        @keyframes fondu_2{
+            0%{background-image: url(imgs_ptfl/Ballan_Mire/BM_1.png);}
+            20%{background-image: url(imgs_ptfl/Ballan_Mire/BM_2.png);}
+            40%{background-image: url(imgs_ptfl/Ballan_Mire/BM_5.png);}
+            60%{background-image: url(imgs_ptfl/Ballan_Mire/BM_4.png);}
+            80%{background-image: url(imgs_ptfl/Ballan_Mire/BM_3.png);}
+            100%{background-image: url(imgs_ptfl/Ballan_Mire/BM_6.png);}
+        }
+        .d1:hover, .d2:hover{
+            animation-play-state: paused;
+        }
+    </style>
+    
+    <head>
+      <title> Portfolio </title>
+      <meta charset="UTF-8">
+      <!--link rel="stylesheet" href="style.css"-->
+  </head>
+
+  <body>
+      <nav id="BANDEAU">
+          <a class="img_idtt" href="portfolio_page_accueil.html"> <p> <img src="imgs_ptfl/photo identité.jpg" width="150" height="150"> </p> </a>
+          
+          <a id="ACCUEIL">
+              <ul>
+                  <li class="DEROUL"> <h1 class="bandeau"><a href="portfolio_page_formation.html">Formation</a></h1>
+                      <ul class="UNDER">
+                          <li class="bandeau"><a href="portfolio_page_IUT_35.html"><h3>IUT de Rennes</h3></a></li>
+                      </ul>
+                  </li>
+
+                  <li class="UNDEROUL"><a href="portfolio_page_compétences.html"><h1 class="bandeau"> Compétences </h1></a> </li>
+               
+                  <li class="DEROUL"><h1 class="bandeau"><a href="portfolio_page_projets.html"> Projets développés </a></h1>
+                      <ul class="UNDER">
+                        <li class="bandeau"><h3><a href="portfolio_page_travaux_bâtiments.html">Solutions bâtiments</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_travaux_publics.html">Solutions TP</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_dimensionnements.html">Dimensionnement</a></h3></li>
+                      </ul>
+                  </li>
+
+                  <li class="DEROUL"><h1 class="bandeau" ><a href="portfolio_page_expériences_pros.html">Expériences professionnelles</a></h1>
+                      <ul class="UNDER">
+                        <li class="bandeau"><h3><a href="portfolio_page_ekum.html">Ekum Architectes</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_ceb.html">Charpente et Bardage</a></h3></li>
+                        <li class="bandeau"><h3><a href="portfolio_page_srb.html">SRB Construction</a></h3></li>
+                      </ul>
+                  </li>
+              </ul>
+          </a>
+      </nav>
+        <a class="img_idtt"><p><img src="imgs_ptfl/prcr_bec_bloc_dim.png" width="930" height="600"></p></a>
+        <p class="lgnd">
+            Niveaux de compétences dans le domaine du dimensionnement
+        </p>
+        <hr>
+        <h4 class="titre"> Maison médicale </h4>
+        <div class="conteneur_1">
+            <div class="d1"></div>
+        </div>
+        <p class="txt">
+            Le projet de la maison médicale consiste à dimensionner le solivage d'un plancher neuf et d'en réaliser un calepinage, d'une part, et,
+            d'autre part, de rechercher une solution techniques pour renforcer un plancher bois existant.<br>
+            Ce projet fit l'objet d'une modélisation sur Revit, permettant ainsi de réaliser le phasage de la solution de renforcement, quelques détails techniques de liaison,
+            ainsi que des nomenclatures des éléments.<br>
+        </p>
+        <hr>
+
+        <h4 class="titre"> Ballan Mire </h4>
+        <div class="conteneur">
+            <div class="d2"></div>
+        </div>
+        <p class="txt">
+           Le projet Ballan Mire consiste en l'extension d'un EHPAD.<br>
+           Dans le cadre de cette situation d'apprentissage évaluée, mon binôme et moi avons réalisé un plan de coffrage du plancher haut R+1 de l'extension, 
+           afin de représenté le réseau porteur structurel.<br>
+           Suite à nos calculs des descentes de charges, nous avons dimensionné les armatures d'une poutre isostatique, d'une autre continue, d'un poteau et de sa semelle isolée.<br>
+           Pour cela, nous avons utilisé le logiciel Graitec, qui permt, suite à la modélisation d'éléments porteur et de leur charge, d'obtenir la disposition des aciers, 
+           que nous sommes ammenés à manipuler, afin de l'optmiser et ainsi obtenir un carnet de ferraillage économique.<br>
+        </p>
+        <hr>
+  </body>
+</html>

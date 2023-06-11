@@ -1,0 +1,282 @@
+<!Doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr" xmlns="http://www.Portfolio_TLD.org/accueil">
+    <style>
+        /*reset CSS*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .img_idtt{
+            text-align: center;
+            padding: 25pt;
+        }
+        #l_1{
+            text-align: center;
+            padding-top: 25pt;
+        }
+        #l_2{
+            text-align: center;
+            padding-top: 20pt;
+        }
+        #BANDEAU{
+            text-decoration: none;
+            margin: 0 auto;
+            background-color: rgb(171, 171, 171);
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+        }
+            /*no puces*/
+        #BANDEAU ul{
+            list-style-type: none;
+        }
+        #BANDEAU ul::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+            /*Disposition*/
+        #BANDEAU li{
+            color: rgb(141, 130, 97);
+            background-color: rgb(215, 215, 215);
+        }
+        .bandeau{
+            color: rgb(141, 130, 97);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+        }
+        .bandeau a{
+            text-decoration: none;
+            color: rgb(141, 130, 97);
+        }
+        .bandeau:hover{
+            border-bottom: 2px solid gold;
+            border-top: 4px solid gold;
+        } 
+        .UNDER{
+            display: none;
+            width: 100%;
+        }
+        .UNDER > .bandeau{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        .DEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL{
+            float: left;
+            width: 25%;
+        }
+        .UNDEROUL a{
+            text-decoration: none;
+        }
+        .DEROUL:hover > .UNDER{
+            display: block;
+        }
+        .DEROUL >.bandeau::after{
+            content: " ▼";
+            color: black;
+        }
+        .txt{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15pt;
+            text-align: justify;
+            margin-left: 20pt;
+            margin-right: 20pt;
+            padding-top: 20pt;
+            margin-bottom: 20pt;
+        }
+        .lgnd{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            padding-top: 5pt;
+            font-style: italic;
+            font-variant: small-caps;
+        }
+        #txt_img_1{
+            margin-left: 250pt;
+        }
+        #txt_img_2{
+            padding-left: 225pt;
+        }
+        #txt_img_3{
+            padding-left: 200pt;
+        }
+        #txt_img_4{
+            margin-left: 75pt;
+        }
+        #txt_img_5{
+            padding-left: 160pt;
+        }
+        #txt_img_6{
+            padding-left: 50pt;
+        }
+        .slider_box{
+            width: 100%;
+            background-color: black;
+        }
+        .slider {
+            width: 930px;
+            margin: 30px auto;
+            position: relative;
+        }
+        .slider-viewport {
+            width: 930px;
+            height: 600px;
+            overflow: hidden;
+        }
+        .slider-content {
+            display: grid;
+            grid-auto-flow: column;
+            -webkit-transition: 1s all;
+            transition: 1s all;
+        }
+        .slider-content img {
+            width: 930px;
+            height: 600px;
+        }
+        .slider-nav {
+            width: 100%;
+            bottom: -30px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .slider-nav a {
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+                box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+            display: inline-block;
+            background-color: #adafbc;
+            width: 15px;
+            height: 15px;
+            margin: 0 3px;
+        }
+        .slider-nav a:hover {
+            background-color: #fff;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+                box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+        }
+        #img2:target .slider-content {
+            transform: translateX(-930px);
+            }
+        #img3:target .slider-content {
+            transform: translateX(-1860px);
+        }  
+        #img4:target .slider-content {
+            transform: translateX(-2790px);
+        }
+    </style>
+    
+    <head>
+        <title> Portfolio </title>
+        <meta charset="UTF-8">
+        <!--link rel="stylesheet" href="style.css"-->
+    </head>
+
+    <body>
+        <nav id="BANDEAU">
+            <a class="img_idtt" href="portfolio_page_accueil.html"> <p> <img src="imgs_ptfl/photo identité.jpg" width="150" height="150"> </p> </a>
+            
+            <a id="ACCUEIL">
+                <ul>
+                    <li class="DEROUL"> <h1 class="bandeau"><a href="portfolio_page_formation.html">Formation</a></h1>
+                        <ul class="UNDER">
+                            <li class="bandeau"><a href="portfolio_page_IUT_35.html"><h3>IUT de Rennes</h3></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="UNDEROUL"><a href="portfolio_page_compétences.html"><h1 class="bandeau"> Compétences </h1></a> </li>
+               
+                    <li class="DEROUL"><h1 class="bandeau" ><a href="portfolio_page_projets.html"> Projets développés </a></h1>
+                        <ul class="UNDER">
+                            <li class="bandeau"><h3><a href="portfolio_page_travaux_bâtiments.html">Solutions bâtiments</a></h3></li>
+                            <li class="bandeau"><h3><a href="portfolio_page_travaux_publics.html">Solutions TP</a></h3></li>
+                            <li class="bandeau"><h3><a href="portfolio_page_dimensionnements.html">Dimensionnement</a></h3></li>
+                        </ul>
+                    </li>
+
+                    <li class="DEROUL"><h1 class="bandeau"><a href="portfolio_page_expériences_pros.html">Expériences professionnelles</a></h1>
+                        <ul class="UNDER">
+                            <li class="bandeau"><h3><a href="portfolio_page_ekum.html">Ekum Architectes</a></h3></li>
+                            <li class="bandeau"><h3><a href="portfolio_page_ceb.html">Charpente et Bardage</a></h3></li>
+                            <li class="bandeau"><h3><a href="portfolio_page_srb.html">SRB Construction</a></h3></li>
+                        </ul>
+                    </li>
+                </ul>
+            </a>
+        </nav>
+
+        <p class="txt">
+            De 2021 à 2024 je prépare un Bachelor Universitaire de Technologie à l'Institut Universitaire de Technologie de Rennes dans le secteur du Génie Civil et de la Construction Durable.<br>
+            J'y développe de nouvelles compétences et acquiert de nombreuses connaissances techniques dans de nombreux domaines du Bâtiment et des Travaux Publics.<br>
+        </p>
+        <p class="txt">
+            Cette formation se présente comme un apprentissage continu permettant l'acquisition de connaissanes théoriques et pratiques dans de nombreux domaines.
+        </p>
+        <p id="l_1">
+            <img src="imgs_ptfl/TvBtm.jpg" width="400px" height="200px">
+            <img src="imgs_ptfl/Concpt.jpg" width="356px" height="200px" style="padding-left: 20pt;">
+            <img src="imgs_ptfl/TcxPblc.jpg" width="260px" height="200px" style="padding-left: 20pt;">
+        </p>
+        <p class="lgnd">
+            <a id="txt_img_1">Travaux bâtiments 
+            <a id="txt_img_2">Conceptions
+            <a id="txt_img_3">Travaux publics
+        </p>
+
+        <p id="l_2">
+            <img src="imgs_ptfl/dimns.png" width="460px" height="200px">
+            <img src="imgs_ptfl/Orga.png" width="356px" height="200px" style="padding-left: 20pt;">
+            <img src="imgs_ptfl/CVC.jpg" width="200px" height="200px" style="padding-left: 20pt;">
+        </p>
+        <p class="lgnd">
+            <a id="txt_img_4">Etudes et dimensionnement</a>
+            <a id="txt_img_5">Organisation et plannification</a>
+            <a id="txt_img_6">Chauffage, ventilation et climatisation</a>
+        </p>
+
+        <p class="txt">
+            Toutefois, elle se cractérise par sa capacité à concrétiser ces connaissances, 
+            au travers d'observations lors d'un suivi ou de visites de chantiers, ainsi que de situations d'apprentissage évalués.
+            <br>
+            Ce diplôme se veut professionalisant en permettant de nombreuses immersions en entreprises, aux travers de stages chaque année et d'une alternance la dernière
+            <br>
+            Enfin, ce diplôme est segmeté en 4 parcours et 5 blocs de compétences de 3 niveaux. Caque année a pour but de développer un nouveau niveau e compétence.
+        </p>
+
+        <p class="slider_box">
+            <div class="slider">
+                <div class="slider-viewport">
+                <div id="img1">
+                    <div id="img2">
+                    <div id="img3">
+                        <div id="img4">
+                            <div class="slider-content">
+                                <img src="imgs_ptfl/prcr_trvx_bat.png">
+                                <img src="imgs_ptfl/prcr_trvx_pub.png">
+                                <img src="imgs_ptfl/prcr_trvx_bec.png">
+                                <img src="imgs_ptfl/prcr_trvx_rapeb.png">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="slider-nav">
+                <a href="#img1"></a>
+                <a href="#img2"></a>
+                <a href="#img3"></a>
+                <a href="#img4"></a>
+                </div>
+            </div>
+        </p>
+
+        <p class="txt">
+            Pour ma part, j'ai choisis le parcours Bureau d'Etudes Conception, avec pour objectif d'acquérir et développer des compétences professionnelles de conception et de modélisation.
+        </p>
+    </body>
+</html>
